@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Zikry Portfolio</title>
+  <link href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      overflow-x: hidden;
+    }
+    .hero {
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h1, .hero p, .hero a {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+    .hero.reveal h1 {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.2s;
+    }
+    .hero.reveal p {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0.6s;
+    }
+    .hero.reveal a {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 1s;
+    }
+    .btn-custom {
+      background-color: white;
+      color: #007bff;
+      border: none;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #0d6efd;
+      color: white;
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Zikry</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <h1>Zikry Azizy Aljava</h1>
+      <p class="lead mt-3">+62 821 4163 4697 | zikryaa17@gmail.com | <a href="https://www.instagram.com/zikryaljava_/" target="_blank" class="text-white">IG: @zikryaljava_</a></p>
+      <a href="about.html" class="btn btn-custom mt-4 px-4 py-2">Lihat Profil</a>
+    </div>
+  </section>
+
+  <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    window.addEventListener('load', function() {
+      const hero = document.getElementById('hero');
+      setTimeout(() => {
+        hero.classList.add('reveal');
+      }, 200);
+    });
+  </script>
+</body>
+</html>
