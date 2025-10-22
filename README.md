@@ -8,3 +8,4 @@ sebuah web portofolio dengan bootstrap 5
 <img width="1919" height="1035" alt="Screenshot 2025-10-22 230528" src="https://github.com/user-attachments/assets/02037e65-93be-4ad9-be31-723d14c2ed7a" />
 
 # Link Presentasi Youtube
+https://youtu.be/Ul9Z_f9qcME
